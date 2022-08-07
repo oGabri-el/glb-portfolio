@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+
+*{
+    box-sizing:border-box;
+    margin: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    white-space: pre-wrap;
+}
+
+a {
+    text-decoration: none;
+}
+
+body{
+    /*background-color: #1d1919;*/
+    background-image: url('/assets/parallax-background2.png');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: saturate(100%);
+    animation: parallaxMoving infinite 1000ms;
+}
+
+/* .parallax{
+    transition: ease 10000ms;
+    background-image: url('/assets/parallax-background2.png');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: saturate(100%);
+    animation: parallaxMoving infinite 1000ms;
+} */
+
+/*Header content*/
+
+/* .main-header{
+
+} */
+
+#header-nav{
+    position: relative;
+    display:flex;
+    width: 100%;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: #1d1919;
+}
+
+.nav-content{
+    text-decoration: none;
+    transition:ease 200ms;
+    width: 200px;
+    padding: 15px;
+    background-color: inherit;
+    color: #ff66cc;
+}
+
+.popup-window {
+    background-color: #1d1919;
+    top: 50px;
+    left: 0;
+}
+
+#portfolio-nav {
+    transition: ease 200ms;
+    position: absolute;
+    width: 0;
+    top: 50px;
+    /* margin-left: 50%; */
+    margin-right: auto;
+    display: block;
+    width: 100%;
+    padding: 0;
+    background-color: #534050;
+}
+
+#portfolio-nav > .nav-content {
+    padding: 0;
+    width: 100%;
+    display: block;
+    list-style: none;
+}
+
+.nav-content:nth-child(1){
+    background-color: #2d272d;
+}
+.nav-content:nth-child(2){
+    background-color: #161116;
+}
+.nav-content:nth-child(2){
+    background-color: #2d272d;
+}
+.nav-content:nth-child(4){
+    background-color: #2d272d;
+}
+
+.nav-content:hover{
+    color: #ff66cc;
+    background-color: #5a3e56;
+}
+
+.introduction {
+    position: relative;
+    top:75px;
+    transition: ease 500ms;
+    color: #d966ff;
+    position: relative;
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    
+}
+
+.introduction > span {
+    position:absolute;
+}
+
+.introduction > span > img {
+    width:500px;
+    display: block;
+    z-index: 1;
+    opacity: .3;
+    filter: blur(2px);
+}
+
+.introduction > h1 {
+    text-align: left;
+    font-weight: 500;
+    font-size:64pt;
+    white-space: pre-line;
+    z-index: 2;
+}
+
+.introduction > h2 {
+    z-index: 1;
+    font-size:32pt;
+    font-weight: 100;
+}
+
+/*About Me*/
+
+#aboutMe {
+    position: relative;
+    top: 50vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+}
+
+.menuBurguer {
+    background-color:#534050;
+    border-radius: 50%;
+    position: relative;
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+}
+
+.menuBurguer > span:nth-of-type(1){
+    animation: menuOpen  ease 500ms forwards;
+}
+.menuBurguer > span:nth-of-type(2){
+    animation: menuOpenShrink  ease 500ms forwards;
+}
+.menuBurguer > span:nth-of-type(3){
+    animation: menuOpenCross  ease 500ms forwards;
+}
+
+.burguerBread {
+    position: absolute;
+    background-color: #ff66cc;
+    width: 40px;
+    height: 10px;
+    margin-top: 4px;
+}
+
+.aboutMeText{
+    margin-left: 200px;
+    border-radius: 2px;
+    position: absolute;
+    top: 650px;
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    color: wheat;
+    background-color: #161116;
+    transition: ease 500ms;
+}
+
+
+@keyframes menuOpen {
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: rotate(45deg)
+    }
+}
+
+@keyframes menuOpenCross {
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(-20px);
+        transform: rotate(-45deg)
+    }
+}
+
+@keyframes menuOpenShrink {
+    100% {
+        transform:scaleY(0);
+    }
+}
