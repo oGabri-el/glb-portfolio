@@ -49,16 +49,17 @@
 
             <h1>About Me</h1>
             <div class="flexContainer">
+                <h3>Biography</h3>
                 <div class="card-container">
 
-                    <span class="icon-container" onClick="showInfo1()">
+                    <span class="icon-container" onClick="w3.toggleClass('#bio', 'open')">
                         <img class="icon" src="/assets/svg/user-icon.png" />
                         <!-- <span class="burguerBread"></span>
                     <span class="burguerBread"></span>
                     <span class="burguerBread"></span> -->
 
                     </span>
-                    <section class="textContainer" id="textContainer1">
+                    <section id="bio" class="textContainer" >
 
                         <p class="textContainerText"> Hello, my name is Gabriel, I'm an aspirant Full Stack Developer,
                             currently working on improving my Front End.
@@ -66,36 +67,36 @@
                     </section>
                 </div>
             </div>
-            <div class="flexContainer">
+            <div class="flexContainer ">
+                <h3>Competences</h3>
                 <div class="card-container">
 
-                    <span class="icon-container" onClick="showInfo2()">
+                    <span class="icon-container" onClick="w3.toggleClass('#competences', 'open')">
                         <img class="icon" src="/assets/svg/competence-icon.png" />
                         <!-- <span class="burguerBread"></span>
                     <span class="burguerBread"></span>
                     <span class="burguerBread"></span> -->
 
                     </span>
-                    <section id="textContainer2" class="textContainer">
-                        <p class="textContainerText">Hello, my name is Gabriel, I'm an aspirant Full Stack Developer,
-                            currently working on improving my Front End.
+                    <section id="competences" class="textContainer">
+                        <p class="textContainerText">My competences are: HTML, CSS, JavaScript, Git, GitHub
                         </p>
                     </section>
                 </div>
             </div>
             <div class="flexContainer">
+                <h3>Education</h3>
                 <div class="card-container">
-
-                    <span class="icon-container" onClick="showInfo3()">
+                    
+                    <span class="icon-container" onClick="w3.toggleClass('#education', 'open')">
                         <img class="icon" src="/assets/svg/book-icon.png" />
                         <!-- <span class="burguerBread"></span>
                     <span class="burguerBread"></span>
                     <span class="burguerBread"></span> -->
 
                     </span>
-                    <section id="textContainer3" class="textContainer">
-                        <p class="textContainerText">Hello, my name is Gabriel, I'm an aspirant Full Stack Developer,
-                            currently working on improving my Front End.
+                    <section id="education" class="textContainer">
+                        <p class="textContainerText">Computer Engineering student, 1st period
                         </p>
                     </section>
                 </div>
@@ -121,6 +122,7 @@
             </section>
         </footer>
     </div>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="index.js"></script>
 </body>
 
